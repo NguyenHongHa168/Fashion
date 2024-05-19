@@ -1,0 +1,135 @@
+
+@font-face {
+  font-family: 'font';
+  src: url('/assets/font_family/GMV_DIN_Pro-Italic.ttf');
+
+}
+
+@font-face {
+  font-family: 'font-bold';
+  src: url('/assets/font_family/GMV_DIN_Pro-Bold.ttf');
+
+}
+.wrapper {
+  margin-top: 20px;
+}
+
+.product {
+  -webkit-box-shadow: 1px 1px 3px 1px rgba(176, 176, 176, 1);
+  -moz-box-shadow: 1px 1px 3px 1px rgba(176, 176, 176, 1);
+  box-shadow: 1px 1px 3px 1px rgba(176, 176, 176, 1);
+  border-radius: 3px;
+}
+.detail_product{
+  z-index: 1;
+}
+.product-image {
+  position: relative;
+  margin-top: 20px;
+  height: 400px;
+  width: 500px;
+  overflow: hidden;
+
+  .image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 94%;
+    background-image: url('/assets/images/detail_product_1.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s ease-out;
+  }
+  .image:hover{
+    cursor: zoom-in;
+  }
+}
+
+.product-thumbnails {
+  margin-top: 30px;
+
+  img {
+    height: 8vw;
+    border-radius: 0;
+    cursor: pointer;
+    position: relative;
+  }
+
+  img:hover {
+    opacity: 0.6;
+  }
+}
+
+.product-details {
+  margin-top: 30px;
+
+  p {
+    margin-top: 20px;
+  }
+}
+
+.product_size{
+  display:flex; 
+  align-items: center;
+}
+.btn-size {
+  /* padding: 5px 10px; */
+  border: 1px solid rgb(127, 125, 125);
+  position: relative;
+  overflow: hidden;
+  width: 70px;
+  margin: 0px 5px;
+  text-align: center;
+
+}
+.btn-size {
+  border: 1px solid #ccc;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+
+}
+.btn-size:active{
+  border: 2px solid rgb(22, 179, 54);
+}
+.btn-size:first-of-type{
+  border: 2px solid rgb(22, 179, 54);
+
+}
+.product-details{
+  line-height: 2.0;
+}
+.btn_add-to-card{
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  
+}
+.btn_add-to-card a{
+  min-width: 250px;
+  padding:5px;
+  border:1px solid #cccc;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  text-align:center;text-transform: uppercase;
+  border-radius: 5px;
+}
+.btn_buy-now a{
+  background-color: black;
+  color:whitesmoke !important;
+  opacity: 1;
+}
+.btn_add-to-card a:hover{
+  color: whitesmoke;
+  background-color:black !important;
+}
+.btn_buy-now a:hover{
+  opacity: 0.8;
+}
+.bold{
+  font-weight: bold;
+  font-family: 'font-bold';
+}

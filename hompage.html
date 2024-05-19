@@ -1,11 +1,604 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trúc Nguyên</title>
+    <title>Fashion shop</title>
+    <link rel="stylesheet" href="/style/style.css">
+    <script src="js.js"></script>
+    <script src="https://kit.fontawesome.com/bb555fa7e1.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
+
 <body>
-    
+    <div class="fashion">
+        <div class="header_top d-flex justify-content-between align-items-center">
+            <div class="header_icon"  data-aos="fade-right" data-aos-easing="ease-out-cubic"
+            data-aos-duration="3000">
+                <i class="fa-sharp fa-solid fa-house px-2"></i>
+                Hệ thống showroom
+            </div>
+            <div class="header_icon"  data-aos="fade-left" data-aos-easing="ease-out-cubic"
+            data-aos-duration="3000">
+                <i class="fa-solid fa-phone px-2"></i>Mua hàng online : 023.64737634
+            </div>
+        </div>
+        <header class="d-flex justify-content-between align-items-center">
+            <div class="header_logo">
+                <img src="/assets/images/logo.png" alt="logo" height="35px" width="65px">
+            </div>
+            <div>
+                <div class="header_element d-flex">
+                    <a href="hompage.html">
+                        <li class="icon_product">
+                            <span class="hover-icon">Sản Phẩm <i class="fa-solid fa-angle-down"></i></span>
+                            <div class="element_header-product" >
+                                <p>Đầm</p>
+                                <p>Áo sơ mi</p>
+                                <p>Áo kiểu</p>
+                                <p>Áo phông</p>
+                                <p>Quần</p>
+                                <p>Chân váy</p>
+                                <p>set bộ</p>
+                                <p>áo dài</p>
+                                <p>áo len</p>
+                            </div>
+                        </li>
+                    </a>
+                    <a href="hompage.html">
+                        <li class="hover-icon">Sản phẩm mới</li>
+                    </a>
+                    <a href="">
+                        <li class="icon_product">
+                            <span class="hover-icon" z>Bộ sưu tập <i class=" fa-solid fa-angle-down"></i></span>
+                            <div class="element_header-product">
+                                <p>Garden blooms</p>
+                                <p>Shunshine</p>
+                            </div>
+                        </li>
+                    </a>
+                    <a href="hompage.html">
+                        <li class="hover-icon">Sản phẩm giá tốt</li>
+                    </a>
+                    <a href="">
+                        <li class="icon_product">
+                            <span class="hover-icon">Siêu sale <i class=" fa-solid fa-angle-down"></i></span>
+                            <div class="element_header-product">
+                                <p>Siêu sale tháng</p>
+                                <p>Siêu sale 50%</p>
+                                <p>Chỉ từ 199k</p>
+                            </div>
+                        </li>
+                    </a>
+                </div>
+                <div class="element_header">
+
+                </div>
+            </div>
+
+            <div class="logo d-flex align-items-center">
+                <div class="logo-search mx-4 px-4">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="d-flex">
+                        <div class="mx-2 ">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <div class="element_header-account">Tài khoản
+                            <div class="element_header-account_items">
+                                <p><a href="login.html">Đăng nhập</a></p>
+                                <p><a href="register.html">Đăng kí</a></p>
+                                
+                            </div>
+                        </div>
+                </div>
+                <div>
+                    <a href="" class="d-flex">
+                        <div class="mx-2">
+                            <i class="pl-4 fa-solid fa-cart-shopping"></i>
+                        </div>
+                        <div>Giỏ hàng</div>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <div class="header_categories container ">
+            Trang chủ / Sản phẩm giá tốt
+        </div>
+        <!-- banner -->
+        <section>
+            <div class="banner">
+                <img class="mySlides" src="/assets/images/banner2.jpg" style="width:100%">
+                <img class="mySlides" src="/assets/images/banner3.webp" style="width:100%">
+                <img class="mySlides" src="/assets/images/banner1.webp" style="width:100%">
+                <img class="mySlides" src="/assets/images/banner4.jpg" style="width:100%">
+                <img class="mySlides" src="/assets/images/banner5.jpg" style="width:100%">
+                <button class="dot-left" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="dot-right" onclick="plusDivs(1)">&#10095;</button>
+            </div>
+            <div class="banner_items d-flex justify-content-between">
+                <div class="banner_item-left" data-aos="fade-right"
+                data-aos-duration="3000" data-aos-offset="300">
+                    <img src="/assets/images/banner_item1.webp" alt="">
+                    <div class="banner_items-content d-flex justify-content-between">
+                        <div class="banner_items-content_left">Váy xinh</div>
+                        <div class="banner_items-content_left">Shop now</div>
+                    </div>
+                </div>
+                <div class="banner_item-right" data-aos="fade-left"
+                data-aos-duration="3000" data-aos-offset="300">
+                    <img src="/assets/images/banner_item2.webp" alt="">
+                    <div class="banner_items-content d-flex justify-content-between">
+                        <div class="banner_items-content_left"> Đầm maxi</div>
+                        <div class="banner_items-content_left">shop now</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- carousel_product -->
+        <div class="item_title d-flex align-items-center justify-content-center text-uppercase" data-aos="fade-up"
+        data-aos-duration="1000" data-aos-offset="200">Sản phẩm nổi bật
+        </div>
+        <section class="carousel_product mb-5">
+            <div class="product">
+                <div class="items">
+                    <!-- item1 -->
+                    <div class="item">
+                        <div class="item_model ">
+                            <img src="/assets/images/product1.webp" alt="product" width="100%" height="80%">
+                        </div>
+                        <div class=" align-items-center">
+                            <div class="item_name">Đầm xanh trễ vai D000012</div>
+                            <div class="item_price">1.500.000</div>
+                        </div>
+                        <div class="overlay">
+                            <a style="color: whitesmoke;text-decoration: none;" href="detail_product.html"><p>Xem thêm</p></a>
+                        </div>
+                    </div>
+                    <!-- item1 -->
+                    <div class="item">
+                        <div class="item_model ">
+                            <img src="/assets/images/product3.webp" alt="product" width="100%" height="80%">
+                        </div>
+                        <div class="align-items-center">
+                            <div class="item_name">ĐẦM CÔNG SỞ VAI BỒNG D18202</div>
+                            <div class="item_price">799,000₫</div>
+                        </div>
+                        <div class="overlay">
+                            <a style="color: whitesmoke;text-decoration: none;" href="detail_product.html"><p>Xem thêm</p></a>
+                        </div>
+                    </div>
+                    <!-- item1 -->
+                    <div class="item">
+                        <div class="item_model ">
+                            <img src="/assets/images/product2.webp" alt="product" width="100%" height="80%">
+                        </div>
+                        <div class="align-items-center">
+                            <div class="item_name">ĐẦM MAXI TÍM TRỄ VAI D00012</div>
+                            <div class="item_price">1,599,000₫</div>
+                        </div>
+                        <div class="overlay">
+                            <a style="color: whitesmoke;text-decoration: none;" href="detail_product.html"><p>Xem thêm</p></a>
+                        </div>
+                    </div>
+                    <!-- item1 -->
+                    <div class="item">
+                        <div class="item_model ">
+                            <img src="/assets/images/product4.webp" alt="product" width="100%" height="80%">
+                        </div>
+                        <div class="align-items-center">
+                            <div class="item_name">SƠ MI CROP TOP SM00952</div>
+                            <div class="item_price">799,000₫</div>
+                        </div>
+                        <div class="overlay">
+                            <a style="color: whitesmoke;text-decoration: none;" href="detail_product.html"><p>Xem thêm</p></a>
+                        </div>
+                    </div>
+                    <!-- item1 -->
+                    <div class="item">
+                        <div class="item_model ">
+                            <img src="/assets/images/product5.webp" alt="product" width="100%" height="80%">
+                        </div>
+                        <div class="align-items-center">
+                            <div class="item_name">ÁO THIẾT KẾ THẮT NƠ AK16132</div>
+                            <div class="item_price">1.100.000</div>
+                        </div>
+                        <div class="overlay">
+                            <a style="color: whitesmoke;text-decoration: none;" href="detail_product.html"><p>Xem thêm</p></a>
+                        </div>
+                    </div>
+                    <!-- item1 -->
+                    <div class="item">
+                        <div class="item_model ">
+                            <img src="/assets/images/product6.webp" alt="product" width="100%" height="80%">
+                        </div>
+                        <div class="align-items-center">
+                            <div class="item_name">ÁO DÀI THÊU HOA AD08512</div>
+                            <div class="item_price">1.450.000</div>
+                        </div>
+                        <div class="overlay">
+                            <a style="color: whitesmoke;text-decoration: none;" href="detail_product.html"><p>Xem thêm</p></a>
+                        </div>
+                    </div>
+                    <!-- item1 -->
+                    <div class="item">
+                        <div class="item_model ">
+                            <img src="/assets/images/product3.webp" alt="product" width="100%" height="80%">
+                        </div>
+                        <div class="align-items-center">
+                            <div class="item_name">ÁO THIẾT KẾ THẮT NƠ AK16132</div>
+                            <div class="item_price">1.100.000</div>
+                        </div>
+                        <div class="overlay">
+                            <a style="color: whitesmoke;text-decoration: none;" href="detail_product.html"><p>Xem thêm</p></a>
+                        </div>
+                    </div>
+                    <!-- item1 -->
+                    <div class="item">
+                        <div class="item_model ">
+                            <img src="/assets/images/product6.webp" alt="product" width="100%" height="80%">
+                        </div>
+                        <div class="align-items-center">
+                            <div class="item_name">ÁO THIẾT KẾ THẮT NƠ AK16132</div>
+                            <div class="item_price">1.100.000</div>
+                        </div>
+                        <div class="overlay">
+                            <a style="color: whitesmoke;text-decoration: none;" href="detail_product.html"><p>Xem thêm</p></a>
+                        </div>
+                    </div>
+                    <!-- item1 -->
+                    <div class="item">
+                        <div class="item_model ">
+                            <img src="/assets/images/product2.webp" alt="product" width="100%" height="80%">
+                        </div>
+                        <div class="align-items-center">
+                            <div class="item_name">ÁO THIẾT KẾ THẮT NƠ AK16132</div>
+                            <div class="item_price">1.100.000</div>
+                        </div>
+                        <div class="overlay">
+                            <a style="color: whitesmoke;text-decoration: none;" href="detail_product.html"><p>Xem thêm</p></a>
+                        </div>
+                    </div>
+                    <!-- item1 -->
+                    <div class="item">
+                        <div class="item_model ">
+                            <img src="/assets/images/product4.webp" alt="product" width="100%" height="80%">
+                        </div>
+                        <div class="align-items-center">
+                            <div class="item_name">ÁO THIẾT KẾ THẮT NƠ AK16132</div>
+                            <div class="item_price">1.100.000</div>
+                        </div>
+                        <div class="overlay">
+                            <a style="color: whitesmoke;text-decoration: none;" href="detail_product.html"><p>Xem thêm</p></a>
+                        </div>
+                    </div>
+                    <!-- item1 -->
+                    <div class="item">
+                        <div class="item_model ">
+                            <img src="/assets/images/product1.webp" alt="product" width="100%" height="80%">
+                        </div>
+                        <div class="align-items-center">
+                            <div class="item_name">ÁO THIẾT KẾ THẮT NƠ AK16132</div>
+                            <div class="item_price">1.100.000</div>
+                        </div>
+                        <div class="overlay">
+                            <a style="color: whitesmoke;text-decoration: none;" href="detail_product.html"><p>Xem thêm</p></a>
+                        </div>
+                    </div>
+                    <!-- item1 -->
+                    <div class="item">
+                        <div class="item_model ">
+                            <img src="/assets/images/product6.webp" alt="product" width="100%" height="80%">
+                        </div>
+                        <div class="align-items-center">
+                            <div class="item_name">ÁO DÀI THÊU HOA AD08512</div>
+                            <div class="item_price">1,189,300₫</div>
+                        </div>
+                        <div class="overlay">
+                            <a style="color: whitesmoke;text-decoration: none;" href="detail_product.html"><p>Xem thêm</p></a>
+                        </div>
+                    </div>
+                    <!-- item1 -->
+                    <div class="item">
+                        <div class="item_model ">
+                            <img src="/assets/images/product5.webp" alt="product" width="100%" height="80%">
+                        </div>
+                        <div class="align-items-center">
+                            <div class="item_name">ÁO THIẾT KẾ THẮT NƠ AK16132</div>
+                            <div class="item_price">1.100.000</div>
+                        </div>
+                        <div class="overlay">
+                            <a style="color: whitesmoke;text-decoration: none;" href="detail_product.html"><p>Xem thêm</p></a>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="carousel-btn prev">&#10094;</div>
+                <div class="carousel-btn next">&#10095;</div>
+            </div>
+        </section>
+        <!-- carousel_product -->
+        <section class="carousel_product mb-5">
+            <div class="item_title d-flex align-items-center justify-content-center text-uppercase" data-aos="fade-up"
+            data-aos-duration="1000" data-aos-offset="200">Độc quyền online
+            </div>
+            <div class="product">
+                <div class="items">
+                    <!-- item1 -->
+                    <div class="item">
+                        <div class="item_model ">
+                            <img src="/assets/images/kieumoi.webp" alt="product" width="100%" height="80%">
+                        </div>
+                        <div class=" align-items-center">
+                            <div class="item_name">ĐẦM VÀNG HỌA TIẾT D403022</div>
+                            <div class="item_price">699.000</div>
+                        </div>
+                        <div class="overlay">
+                            <a style="color: whitesmoke;text-decoration: none;" href="detail_product.html"><p>Xem thêm</p></a>
+                        </div>
+                    </div>
+                    <!-- item1 -->
+                    <div class="item">
+                        <div class="item_model ">
+                            <img src="/assets/images/kieu2.webp" alt="product" width="100%" height="80%">
+                        </div>
+                        <div class="align-items-center">
+                            <div class="item_name">ĐẦM VÀNG TAY BỒNG D40162</div>
+                            <div class="item_price">799,000₫</div>
+                        </div>
+                        <div class="overlay">
+                            <a style="color: whitesmoke;text-decoration: none;" href="detail_product.html"><p>Xem thêm</p></a>
+                        </div>
+                    </div>
+                    <!-- item1 -->
+                    <div class="item">
+                        <div class="item_model ">
+                            <img src="/assets/images/product2.webp" alt="product" width="100%" height="80%">
+                        </div>
+                        <div class="align-items-center">
+                            <div class="item_name">ĐẦM MAXI TÍM TRỄ VAI D00012</div>
+                            <div class="item_price">1,599,000₫</div>
+                        </div>
+                        <div class="overlay">
+                            <a style="color: whitesmoke;text-decoration: none;" href="detail_product.html"><p>Xem thêm</p></a>
+                        </div>
+                    </div>
+                    <!-- item1 -->
+                    <div class="item">
+                        <div class="item_model ">
+                            <img src="/assets/images/kieu3.webp" alt="product" width="100%" height="80%">
+                        </div>
+                        <div class="align-items-center">
+                            <div class="item_name">ĐẦM LIỀN PHỐI HỌA TIẾT CHẤM BI D42262</div>
+                            <div class="item_price">1.299,000₫</div>
+                        </div>
+                        <div class="overlay">
+                            <a style="color: whitesmoke;text-decoration: none;" href="detail_product.html"><p>Xem thêm</p></a>
+                        </div>
+                    </div>
+                    <!-- item1 -->
+                    <div class="item">
+                        <div class="item_model ">
+                            <img src="/assets/images/kieu5.webp" alt="product" width="100%" height="80%">
+                        </div>
+                        <div class="align-items-center">
+                            <div class="item_name">SƠ MI TRẮNG CỔ PHỐI BÈO SM40262</div>
+                            <div class="item_price">1.380.000</div>
+                        </div>
+                        <div class="overlay">
+                            <a style="color: whitesmoke;text-decoration: none;" href="detail_product.html"><p>Xem thêm</p></a>
+                        </div>
+                    </div>
+                    <!-- item1 -->
+                    <div class="item">
+                        <div class="item_model ">
+                            <img src="/assets/images/product6.webp" alt="product" width="100%" height="80%">
+                        </div>
+                        <div class="align-items-center">
+                            <div class="item_name">ÁO THIẾT KẾ THẮT NƠ AK16132</div>
+                            <div class="item_price">1.100.000</div>
+                        </div>
+                        <div class="overlay">
+                            <a style="color: whitesmoke;text-decoration: none;" href="detail_product.html"><p>Xem thêm</p></a>
+                        </div>
+                    </div>
+                    <!-- item1 -->
+                    <div class="item">
+                        <div class="item_model ">
+                            <img src="/assets/images/kieu6.webp" alt="product" width="100%" height="80%">
+                        </div>
+                        <div class="align-items-center">
+                            <div class="item_name">SƠ MI CHẤM BI SM40142</div>
+                            <div class="item_price">400.000</div>
+                        </div>
+                        <div class="overlay">
+                            <a style="color: whitesmoke;text-decoration: none;" href="detail_product.html"><p>Xem thêm</p></a>
+                        </div>
+                    </div>
+                    <!-- item1 -->
+                    <div class="item">
+                        <div class="item_model ">
+                            <img src="/assets/images/product6.webp" alt="product" width="100%" height="80%">
+                        </div>
+                        <div class="align-items-center">
+                            <div class="item_name">ÁO THIẾT KẾ THẮT NƠ AK16132</div>
+                            <div class="item_price">1.100.000</div>
+                        </div>
+                        <div class="overlay">
+                            <a style="color: whitesmoke;text-decoration: none;" href="detail_product.html"><p>Xem thêm</p></a>
+                        </div>
+                    </div>
+                    <!-- item1 -->
+                    <div class="item">
+                        <div class="item_model ">
+                            <img src="/assets/images/product2.webp" alt="product" width="100%" height="80%">
+                        </div>
+                        <div class="align-items-center">
+                            <div class="item_name">ÁO THIẾT KẾ THẮT NƠ AK16132</div>
+                            <div class="item_price">1.100.000</div>
+                        </div>
+                        <div class="overlay">
+                            <a style="color: whitesmoke;text-decoration: none;" href="detail_product.html"><p>Xem thêm</p></a>
+                        </div>
+                    </div>
+                    <!-- item1 -->
+                    <div class="item">
+                        <div class="item_model ">
+                            <img src="/assets/images/product4.webp" alt="product" width="100%" height="80%">
+                        </div>
+                        <div class="align-items-center">
+                            <div class="item_name">ÁO THIẾT KẾ THẮT NƠ AK16132</div>
+                            <div class="item_price">1.100.000</div>
+                        </div>
+                        <div class="overlay">
+                            <a style="color: whitesmoke;text-decoration: none;" href="detail_product.html"><p>Xem thêm</p></a>
+                        </div>
+                    </div>
+                    <!-- item1 -->
+                    <div class="item">
+                        <div class="item_model ">
+                            <img src="/assets/images/kieu7.webp" alt="product" width="100%" height="80%">
+                        </div>
+                        <div class="align-items-center">
+                            <div class="item_name">ÁO THIẾT KẾ THẮT NƠ AK16132</div>
+                            <div class="item_price">1.100.000</div>
+                        </div>
+                        <div class="overlay">
+                            <a style="color: whitesmoke;text-decoration: none;" href="detail_product.html"><p>Xem thêm</p></a>
+                        </div>
+                    </div>
+                    <!-- item1 -->
+                    <div class="item">
+                        <div class="item_model ">
+                            <img src="/assets/images/product6.webp" alt="product" width="100%" height="80%">
+                        </div>
+                        <div class="align-items-center">
+                            <div class="item_name">ÁO DÀI THÊU HOA AD08512</div>
+                            <div class="item_price">1,189,300₫</div>
+                        </div>
+                        <div class="overlay">
+                            <a style="color: whitesmoke;text-decoration: none;" href="detail_product.html"><p>Xem thêm</p></a>
+                        </div>
+                    </div>
+                    <!-- item1 -->
+                    <div class="item">
+                        <div class="item_model ">
+                            <img src="/assets/images/product5.webp" alt="product" width="100%" height="80%">
+                        </div>
+                        <div class="align-items-center">
+                            <div class="item_name">ÁO THIẾT KẾ THẮT NƠ AK16132</div>
+                            <div class="item_price">1.100.000</div>
+                        </div>
+                        <div class="overlay">
+                            <a style="color: whitesmoke;text-decoration: none;" href="detail_product.html"><p>Xem thêm</p></a>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="carousel-btn prev">&#10094;</div>
+                <div class="carousel-btn next">&#10095;</div>
+            </div>
+        </section>
+        <!-- img banner -->
+        <section >
+            <img src="/assets/images/banner_body.webp" alt="banner_body" width="100%">
+        </section>
+        <!-- new blog -->
+        <section class="carousel_product mb-5">
+            <div class="d-flex flex-column align-items-center justify-content-center text-uppercase"
+                style="padding:48px">
+                <div class="new_blog-title"  data-aos="fade-right"
+                data-aos-duration="3000" data-aos-offset="300">new's blog</div>
+                <div class="text-lowercase" style="font-weight: bold;" data-aos="fade-left"
+                data-aos-duration="3000" data-aos-offset="300">Đón đầu xu hướng, định hình phong cách</div>
+            </div>
+            <div class="new_blog container">
+                <div class="items">
+                    <!-- new item 1 -->
+                    <div class="item" data-aos="fade-left"
+                    data-aos-duration="3000" data-aos-offset="300">
+                        <div class="item_model ">
+                            <img src="/assets/images/new3.webp" alt="product" width="100%" height="80%">
+                            <div class="title">3 MẪU TRANG PHỤC CỔ VEST THANH LỊCH VÀ SANG TRỌNG CHO CÔ NÀNG CÔNG SỞ
+                            </div>
+                        </div>
+                    </div>
+                    <!-- new item 1 -->
+                    <div class="item" data-aos="fade-up"
+                    data-aos-duration="3000" data-aos-offset="300">
+                        <div class="item_model ">
+                            <div class="new-item_img"><img src="/assets/images/new_blog.webp" alt="product" width="100%"
+                                    height="80%"></div>
+                            <div class="title">SUMMER FESTIVAL - ÁO PHÔNG CHỈ TỪ 299K</div>
+                        </div>
+                    </div>
+                    <!-- new item 1 -->
+                    <div class="item" data-aos="fade-right"
+                    data-aos-duration="3000" data-aos-offset="300">
+                        <div class="item_model ">
+                            <div class="new-item_img">
+                                <img src="/assets/images/new_blog2.webp" alt="product" width="100%" height="80%">
+                            </div>
+                            <div class="title">ẤN TƯỢNG CÙNG ĐẦM THẮT NƠ</div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+        <!-- regitser_new -->
+        <section class="register-new">
+            <div class="register-new_tittle" >
+                Đăng ký bản tin
+            </div>
+            <div class="p-2">
+                Đăng kí nhận bản tin từ fashion shop để được cập nhật những mẫu mới nhất
+            </div>
+            <input type="email" placeholder="Vui lòng nhập email..."> <span>Đăng ký</span>
+        </section>
+        <!-- footer -->
+        <footer class="footer">
+            <li style="padding:30px 150px; font-weight:bold; list-style:none">FASHION SHOP - THỜI TRANG CÔNG SỞ</li>
+            <div class=" d-flex container justify-content-center">
+                <ul class="footer-content_company ">
+                    <li>Công ty TNHH Dịch vụ và Thương mại An Thành.
+                        Số ĐKKD 0107861393, Sở KHĐT Tp. Hà Nội cấp ngày 04/10/2017</li>
+                    <li>Địa chỉ: Lô 1+2, Ô quy hoạch E.2/NO7 đường Lâm Hạ
+                        phường Bồ Đề, quận Long Biên, Hà Nội</li>
+                    <li>Chăm sóc khách hàng: 0246.2591551</li>
+                    <li>Mua hàng online: 0246.2909098</li>
+                </ul>
+                <ul class="footer-content">
+                    <li>Giới thiệu</li>
+                    <li>Triết lý kinh doanh</li>
+                    <li>Blog của NEM</li>
+                    <li>Hệ thống showroom</li>
+                    <li>Liên hệ</li>
+                </ul>
+                <ul class="footer-content">
+                    <li>Chính sách giao nhận - Vận chuyển</li>
+                    <li>Hướng dẫn thanh toán</li>
+                    <li>Tra cứu đơn hàng</li>
+                    <li>Hướng dẫn chọn Size</li>
+                    <li>Quy định đổi hàng</li>
+                    <li>Quy định bảo hành và sửa chữa</li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <script>
+        AOS.init();
+      </script>
 </body>
+
 </html>
